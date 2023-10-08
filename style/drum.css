@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background: url("../img/SL_123119_26540_02.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100vh;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 50vh;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: #000000a7;
+    background-color: #b46cd87c;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.container {
+    width: 60%;
+    margin: 0px 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.letter {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b46cd8;
+    color: black;
+    border: 2px solid #232323;
+    cursor: pointer;
+}
+.active{
+    animation-name: smoke;
+    animation-duration: .5s;
+}
+
+@keyframes smoke {
+    from{
+        box-shadow: 1px -10px 15px #510567 , 20px -10px 15px #04324A , -30px -10px 15px #91062D;   
+    }
+    to{
+        box-shadow: 1px -80px 50px #510567 , 1px -80px 50px #04324A , -1px -80px 50px #91062D;   
+    }
+}
+
+
