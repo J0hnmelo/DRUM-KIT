@@ -35,12 +35,7 @@ const removeAnimation = (letter) => {
     }, 500);
 }
 const activeDiv = (event) => {
-    let letter = "";
-    if(event.type == "click"){
-        letter = event.target.id;
-    }else {
-        letter = event.key.toUpperCase();
-    }
+    const letter = event.type == "click" ? event.target.id : event.key.toUpperCase();
     const letterExist = sons.hasOwnProperty(letter);
     if(letterExist){
         addAnimation(letter);
